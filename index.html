@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhishek Kumar — Graphic Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#071730;
+      --card:#0f2940;
+      --accent:#ff6a3d;
+      --muted:#9fb3c6;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#041426);color:#e6f2fb}
+    a{color:var(--accent);text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:28px 40px;max-width:1200px;margin:0 auto}
+    .brand{display:flex;align-items:center;gap:16px}
+    .logo-blob{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,#122f49,#0d2336);display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-family:'Playfair Display';box-shadow:0 6px 24px rgba(0,0,0,0.5)}
+    .brand h1{margin:0;font-size:18px}
+    .brand p{margin:0;color:var(--muted);font-size:13px}
+    .nav{display:flex;gap:18px;align-items:center}
+    .cta{background:var(--accent);color:#071226;padding:10px 14px;border-radius:10px;font-weight:700}
+
+    .container{max-width:1100px;margin:24px auto;padding:0 24px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:12px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(2,12,24,0.6);}
+    .hero h2{font-family:'Playfair Display';font-size:36px;margin:0 0 8px}
+    .hero .tag{color:var(--muted);margin-bottom:16px}
+    .hero p{line-height:1.6;color:#cfe6fb}
+    .contact-row{display:flex;gap:12px;margin-top:18px}
+    .pill{background:var(--glass);padding:10px 12px;border-radius:10px;color:var(--muted);font-size:14px}
+    .btn-row{margin-top:18px;display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+
+    /* preview collage */
+    .preview{position:relative;height:520px;border-radius:14px;overflow:hidden;background:#0a2741;display:flex;align-items:center;justify-content:center}
+    .preview .main{width:86%;height:86%;border-radius:14px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.6);position:relative}
+    .preview img{display:block;width:100%;height:100%;object-fit:cover}
+    .reflect{position:absolute;left:0;right:0;bottom:-18%;height:40%;transform:scaleY(-1);opacity:0.16;filter:blur(6px)}
+
+    /* sections */
+    section{margin-top:28px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);padding:16px;border-radius:12px}
+    .skills li{margin:8px 0;color:var(--muted)}
+
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .portfolio-grid img{width:100%;border-radius:10px;display:block}
+
+    footer{margin:40px 0 80px;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .preview{height:420px}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      header{padding:18px}
+      .brand h1{font-size:16px}
+      .preview{height:320px}
+      .grid{grid-template-columns:1fr}
+      .portfolio-grid{grid-template-columns:1fr}
+    }
+
+    /* subtle utility */
+    .muted{color:var(--muted)}
+    .section-title{font-family:'Playfair Display';font-size:20px;margin:0 0 12px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo-blob">AK</div>
+      <div>
+        <h1>Abhishek Kumar</h1>
+        <p class="muted">Graphic Designer • Creative Visual Artist</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="muted"></div>
+      <a class="cta" href="tel:+917488950843">Hire Me</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <div class="hero-card">
+        <h2>Abhishek Kumar</h2>
+        <div class="tag">Graphic Designer | Creative Visual Artist</div>
+        <p>“Designs that Connect with People” — I create visual stories for brands, social media campaigns and political promotions. I focus on clarity, impact and creative problem solving to help your message stand out.</p>
+
+        <div class="contact-row">
+          <div class="pill">✉️ <a href="mailto:abhisheks10845@gmail.com">abhisheks10845@gmail.com</a></div>
+          <div class="pill">📞 <a href="tel:+917488950843">+91 74889 50843</a></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="#portfolio">View Works</a>
+          <a class="btn" href="Abhishek-Kumar (1).pdf" download="">Download CV</a>
+        </div>
+
+        <section style="margin-top:18px">
+          <h3 class="section-title">About Me</h3>
+          <p class="muted">I am a passionate Graphic Designer with expertise in creating engaging designs for brands, social media campaigns, and political promotions. My goal is to deliver creative visuals that tell a story.</p>
+        </section>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px">
+          <div class="card">
+            <h4 style="margin:0 0 8px">Education</h4>
+            <div class="muted" style="font-size:14px">
+              <strong>Graduation:</strong> Impact College (BCA)<br>
+              <strong>12th:</strong> Patel College<br>
+              <strong>10th:</strong> DAV Public School
+            </div>
+          </div>
+          <div class="card">
+            <h4 style="margin:0 0 8px">Experience</h4>
+            <div class="muted" style="font-size:14px">1 year 5 months — Graphic design, social media creatives, political campaign design</div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:14px;flex-wrap:wrap">
+          <div class="card" style="flex:1;min-width:180px">
+            <h4 style="margin:0 0 8px">Skills</h4>
+            <ul class="skills" style="padding-left:14px;margin:0">
+              <li>Social media creative</li>
+              <li>Branding & identity</li>
+              <li>Poster, Banner, Flyers</li>
+              <li>Political campaign design</li>
+              <li>Animation & social media posting</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div>
+        <div class="preview">
+          <div class="main">
+            <!-- main hero image uses the a.png uploaded by user -->
+            <img src="abhi.jpg" alt="Hero collage">
+          </div>
+          <!-- reflected copy (visual only) -->
+          <div class="reflect"><img src="/mnt/data/a.png" alt="reflection"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="portfolio">
+      <h3 class="section-title">Selected Works</h3>
+      <p class="muted">A selection of recent projects and creative experiments.</p>
+
+      <div class="portfolio-grid" style="margin-top:12px">
+         <img src="BEAUTIFUL.jpg" alt="project1">
+          <img src="GHAASPAAT.jpg" alt="project5">
+         <img src="Microgrens.jpg" alt="project5">
+        <img src="GHAASPAAT MICROGREENS.jpg" alt="project3">
+        <img src="Microgreens_.jpg" alt="project4">
+         <img src="Calnder Desgin.jpg" alt="project6">           
+        <img src="a.png" alt="project5">     
+        <img src="logo.jpeg" alt="project1">
+        <img src="abc.jpeg" alt="project2">
+        <img src="jamu kasmir_.jpg" alt="project6">
+        <img src="fanta.jpg" alt="project12">
+           <img src="Jump.jpg" alt="project13">
+          <img src="Artboard 1.jpg" alt="project9">
+          <img src="करवा चौथ.jpg" alt="project10">
+          <img src="भाई दूज.jpg" alt="project11">
+            <img src="Untitled-1 .jpg" alt="project1">
+            <img src="sourav.jpeg" alt="project8">
+       
+      </div>
+    </section>
+
+    <section id="contact">
+      <h3 class="section-title">Contact</h3>
+      <div class="grid" style="margin-top:12px">
+        <div class="card">
+          <h4 style="margin:0 0 8px">Get in touch</h4>
+          <p class="muted">For collaborations, freelance work, or full-time opportunities:</p>
+          <p style="margin-top:8px"><strong>Email:</strong> <a href="mailto:abhisheks10845@gmail.com">abhisheks10845@gmail.com</a><br><strong>Phone:</strong> <a href="tel:+917488950843">+91 74889 50843</a></p>
+         
+        </div>
+        <div class="card">
+          <h4 style="margin:0 0 8px">Quick bio</h4>
+          <p class="muted">Abhishek Kumar — Graphic Designer | Creative Visual Artist. I make designs that connect with people across platforms and campaigns.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div>© <strong>Abhishek Kumar</strong> — Graphic Designer ♥</div>
+  </footer>
+
+</body>
+</html>
